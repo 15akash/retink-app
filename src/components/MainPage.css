@@ -1,0 +1,102 @@
+.mainPage {
+  background-image: url(../assets/background.png);
+  background-size: cover;
+  max-width: 1440px;
+  padding: 50px 10px;
+  background-repeat: no-repeat;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* Card */
+
+.card {
+  width: 490px;
+  height: 138px;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11),
+    0px 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.mainHeading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 45px;
+  line-height: 27px;
+  color: #ffffff;
+  align-items: left;
+}
+
+.cardHeading {
+  color: black;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.cardParagraph {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+  color: #525f7f;
+}
+
+/* Captions classes */
+
+.caption {
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  align-items: center;
+  font-family: Open Sans;
+  position: relative;
+  box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1),
+    0px 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.captionWeight {
+  font-weight: 600;
+}
+
+.upperCaption:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid white;
+  border-right: 15px solid transparent;
+  border-top: 15px solid white;
+  border-bottom: 15px solid transparent;
+  left: 0px;
+  bottom: -19px;
+}
+
+.lowerCaption:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid white;
+  border-top: 15px solid white;
+  border-bottom: 15px solid transparent;
+  left: 0%;
+  right: 0%;
+  top: -19.59%;
+  bottom: 0%;
+  transform: rotate(-180deg);
+}
+
+.character {
+  position: relative;
+  left: 80px;
+  top: 85px;
+}
