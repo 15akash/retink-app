@@ -1,9 +1,10 @@
 import { Fragment } from "react";
 import "./Login.css";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "../NavigationBar";
 
 function Login() {
   const submitHandler = (event) => {
+    console.log("clicked");
     event.preventDefault();
   };
 
@@ -11,7 +12,7 @@ function Login() {
     <Fragment>
       <NavigationBar />
       <div className="login">
-        <div className="m-auto p-auto w-5/12 h-5/12">
+        <div className="m-auto">
           <form
             className="bg-white text-comet-800 flex-col pt-10 pb-7 px-10 mx-10 shadow-2xl drop-shadow-2xl rounded-xl"
             onSubmit={submitHandler}

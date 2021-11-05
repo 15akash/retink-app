@@ -1,6 +1,6 @@
 import "./Services.css";
-import NavigationBar from "./NavigationBar";
-import character from "../assets/character.png";
+import NavigationBar from "../NavigationBar";
+import character from "../../assets/character.png";
 
 function Services(props) {
   return (
@@ -11,7 +11,7 @@ function Services(props) {
 
         {/* Captions' div */}
 
-        <div className="talk-bubble tri-right round right-in bg-blue-500 shadow-2xl drop-shadow-2xl absolute left-36 top-44">
+        <div className="talk-bubble tri-right round right-in text-comet-500 shadow-2xl drop-shadow-2xl absolute left-36 top-44">
           <div className="talktext">
             <p>
               Hi! Welcome to our {props.introduction} page. We are currently

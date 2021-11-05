@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import "./MainPage.css";
-import character from "../assets/character.png";
-import oval from "../assets/oval.png";
-import NavigationBar from "./NavigationBar";
+import character from "../../assets/character.png";
+import NavigationBar from "../NavigationBar";
+import Card from "../UI/Card";
 
 function MainPage() {
   return (
@@ -14,39 +14,19 @@ function MainPage() {
 
           <div className="mt-12 px-5 lg:pt-20 lg:pl-20 ">
             <div className="mainHeading">What are you looking for?</div>
-
-            {/* Cards div */}
-
             <div className="lg:mr-10">
-              {/* Card - 1 */}
-
-              <div className="card bg-white my-10 p-5 flex">
-                <img src={oval} alt="oval" className="pr-6 pb-10" />
-                <div className="pt-2 pr-2">
-                  <h2 className="cardHeading pb-5">
-                    Help me create a Marketing Plan!
-                  </h2>
-                  <p className="cardParagraph ">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that
-                  </p>
-                </div>
-              </div>
-
-              {/* Card - 2 */}
-
-              <div className="card bg-white p-5 flex">
-                <img src={oval} alt="oval" className="pr-6 pb-10" />
-                <div className="pt-2 pr-2">
-                  <h2 className="cardHeading pb-5">
-                    I know what i am looking for.
-                  </h2>
-                  <p className="cardParagraph ">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that
-                  </p>
-                </div>
-              </div>
+              <Card
+                heading={"Help me create a Marketing Plan!"}
+                paragraph={
+                  "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that"
+                }
+              />
+              <Card
+                heading={"I know what i am looking for."}
+                paragraph={
+                  "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that"
+                }
+              />
             </div>
           </div>
 

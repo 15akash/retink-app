@@ -1,9 +1,10 @@
 import "./App.css";
-import Login from "./components/Login";
+import Login from "./components/Pages/Login";
 import { Switch, Route } from "react-router";
-import Services from "./components/Services";
-import MainPage from "./components/MainPage";
-import AboutUs from "./components/AboutUs";
+import Services from "./components/Pages/Services";
+import MainPage from "./components/Pages/MainPage";
+
+import AdminPanel from "./components/AdminPanel";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         </Route>
 
         <Route path="/about-us">
-          <AboutUs />
+          <AdminPanel />
         </Route>
         <Route path="/login">
           <Login />

@@ -12,7 +12,7 @@
   margin: 40px;
   display: inline-block;
   position: relative;
-  width: 200px;
+  width: 300px;
   height: auto;
   background-color: #c1ccc2;
 }
@@ -44,9 +44,11 @@
 
 /* talk bubble contents */
 .talktext {
+  font-size: 20px;
+  font-family: Open Sans;
   padding: 1em;
   text-align: left;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 .talktext p {
   /* remove webkit p margins */
