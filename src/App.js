@@ -13,7 +13,7 @@ function App() {
           <MainPage />
         </Route>
         <Route path="/services">
-          <Services />
+          <Services introduction={"services"} />
         </Route>
 
         <Route path="/about-us">
