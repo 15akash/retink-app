@@ -1,13 +1,12 @@
 import { Fragment } from "react";
 import "./MainPage.css";
 import character from "../../assets/character.png";
-import NavigationBar from "../NavigationBar";
+
 import Card from "../UI/Card";
 
 function MainPage() {
   return (
     <Fragment>
-      <NavigationBar />
       <div className="backgroundContainer">
         <div className="mainPage grid grid-cols-1 lg:grid-cols-2 pt-20 m-auto">
           {/* Div 1 without the character image. */}

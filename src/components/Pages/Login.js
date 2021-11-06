@@ -1,16 +1,23 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import "./Login.css";
-import NavigationBar from "../NavigationBar";
 
-function Login() {
+function Login(props) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [user, setUser] = useState([]);
+
   const submitHandler = (event) => {
     console.log("clicked");
     event.preventDefault();
+
+    props.onLogin(email, password);
+    const newUser = { email: email, password: password };
+    setUser([...user, newUser]);
+    console.log(newUser);
   };
 
   return (
     <Fragment>
-      <NavigationBar />
       <div className="login">
         <div className="m-auto form">
           <form
@@ -24,7 +31,10 @@ function Login() {
               <input
                 placeholder="Enter your email"
                 type="email"
+                id="email"
                 className="shadow appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <label className="block pb-2 pt-5 text-lg" htmlFor="password">
                 Password
@@ -32,7 +42,10 @@ function Login() {
               <input
                 placeholder="Enter your password"
                 type="password"
+                id="password"
                 className="shadow appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className="flex">
