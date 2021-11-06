@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router";
 import Services from "./components/Pages/Services";
 import MainPage from "./components/Pages/MainPage";
 
-import AdminPanel from "./components/AdminPanel";
+import AdminPanel from "./components/AdminPanel/AdminPanel";
 
 function App() {
   return (
