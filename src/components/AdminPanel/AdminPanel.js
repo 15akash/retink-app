@@ -14,10 +14,10 @@ const AdminPanel = (props) => {
         <div className="py-10 mx-20">
           <div className="grid grid-cols-2">
             <div className="py-10 justify-start">Dashboard</div>
-            <div className="justify-end">
+            <div className="ml-auto mr-5">
               <button
                 onClick={props.onLogout}
-                className="bg-blue-600 my-6 px-5 py-2 text-white text-base rounded-sm"
+                className="bg-blue-600 hover:bg-blue-800 my-6 px-5 py-2 text-white text-base rounded-sm"
               >
                 Logout
               </button>

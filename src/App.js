@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Switch, Route } from "react-router";
 import "./App.css";
-import Login from "./components/Pages/Login";
-import Services from "./components/Pages/Services";
 import MainPage from "./components/Pages/MainPage";
+import NavigationBar from "./components/NavigationBar";
 import AdminPanel from "./components/AdminPanel/AdminPanel";
 import AboutUs from "./components/Pages/AboutUs";
-import NavigationBar from "./components/NavigationBar";
+import Login from "./components/Pages/Login";
+import Services from "./components/Pages/Services";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

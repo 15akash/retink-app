@@ -4,16 +4,12 @@ import "./Login.css";
 function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [user, setUser] = useState([]);
 
   const submitHandler = (event) => {
     console.log("clicked");
     event.preventDefault();
 
     props.onLogin(email, password);
-    const newUser = { email: email, password: password };
-    setUser([...user, newUser]);
-    console.log(newUser);
   };
 
   return (
