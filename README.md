@@ -12,6 +12,14 @@ Login Page :
 ![Screenshot (79)](https://user-images.githubusercontent.com/40172763/140565274-519c1e8c-135e-4cbc-a587-cfeccc285a86.png)
 
 
+Admin Panel :
+
+
+![Screenshot (87)](https://user-images.githubusercontent.com/40172763/140637153-2a361bab-e146-4693-816b-20ec2a6649a3.png)
+
+
+![Screenshot (88)](https://user-images.githubusercontent.com/40172763/140637157-9742ae38-7f2f-42e4-bbb3-429c136b7174.png)
+
 
 
 # Getting Started with Create React App
